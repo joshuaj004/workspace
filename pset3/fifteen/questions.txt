@@ -1,0 +1,9 @@
+questions.txt
+
+Computer Science 50
+Problem Set 3
+
+0. It allows between size 3 and 9, inclusive.
+1. The board is stored as a 2D array.
+2. greet() is called at the beginning.
+3. I need to implement init(), draw(), move(tile), and won().

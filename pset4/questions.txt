@@ -1,0 +1,23 @@
+0.  Colors:
+    BMP: 32 bits or 4,294,967,295 colors
+    GIF: 8 bits or 255 colors
+    JPG: 24 bits or 16,777,215 colors
+    PNG: 24 bits or 16,777,215 colors with thhe option of 32 bit RGBA
+1.  Gifs only currently support animation.
+2.  Lossy compression decreases file size at the cost of visual quality, but lossless has no such problem.
+3.  JPG is lossy-compressed.
+4.  It's just marked as free space, no actually overwriting is done.
+5.  Rewrite over all the partitions with junk data a few times or physically destroy the drive.
+6.  stdint.h allows specific lenght ints
+7.  You use those ints so that the exact length is used.
+8.  8/32/32/16
+9.  BM
+10. bfSize is "The size, in bytes, of the bitmap file" biSize is "The number of bytes required by the structure."
+11. "If biHeight is negative, the bitmap is a top-down DIB and its origin is the upper-left corner."
+12. biBitCount
+13. Maybe the file doesn't exist.
+14. Because there is only 1 picture.
+15. 3
+16. fseek offsets a given number of bytes, for example, to skip the header of a BMP file.
+17. "Current position of the file pointer"
+18. Rick Astley?

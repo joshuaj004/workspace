@@ -1,0 +1,19 @@
+0.  "an obscure term ostensibly referring to a lung disease caused by silica dust, sometimes cited as one of the longest words in the English language."
+1.  "get resource usage"
+2.  16
+3.  Probably because we save time by not having to copy the values over.
+4.  The for-loop firstly iterates through all 'words' found in the file, filters out 
+non-alpha chars, appends the letter to the currently processed word. If we encounter a new
+word, then the previous word is capped with a '\0', we add the to number of currently found
+words, check if it's mispelled and go about our day.
+5.  If we did that, we'd have to grab the full word, then iterate through it to check for 
+non-alpha chars and that's less efficient.
+6.  Probably because the value of the params is constantly changing, so we effectively take 
+a snapshot at the present moment and computer with those values.
+7.  I used a hash table with a fairly straight forward struct, which had the ability to hold
+a word and the next node for the seperate chaining.
+8.  I want to say it was around 0.12 ms.
+9.  The load function was completely redone, because that's where the vast majority of 
+time is used in hashtables. I was creating a front node for each entry, which was not
+needed at all.
+10. Possibly in unload. I don't think I can see any optimizations elsewhere.
